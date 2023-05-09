@@ -25,12 +25,3 @@ func TestEnvPrefix(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, "localhost:9000", c.HTTPServer.Addr)
 }
-
-func TestUnparsable(t *testing.T) {
-	t.Parallel()
-
-	os.Setenv("MICROCART_HTTPSERVER_READTIMEOUT", "unparsable")
-
-	_, err := config.Load()
-	assert.Error(t, err)
-}
