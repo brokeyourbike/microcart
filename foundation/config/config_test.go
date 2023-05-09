@@ -11,14 +11,6 @@ import (
 func TestLoad(t *testing.T) {
 	t.Parallel()
 
-	c, err := config.Load()
-	assert.NoError(t, err)
-	assert.NotNil(t, c)
-}
-
-func TestEnvPrefix(t *testing.T) {
-	t.Parallel()
-
 	os.Setenv("MICROCART_HTTPSERVER_ADDR", "localhost:9000")
 
 	c, err := config.Load()
