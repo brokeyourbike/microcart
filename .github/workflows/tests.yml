@@ -29,3 +29,6 @@ jobs:
         coverageCommand: ''
         prefix: 'github.com/brokeyourbike/microcart'
         coverageLocations: ./coverage.out:gocov
+
+    - uses: codecov/codecov-action@v3
+      continue-on-error: true
