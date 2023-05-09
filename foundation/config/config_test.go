@@ -17,6 +17,8 @@ func TestLoad(t *testing.T) {
 }
 
 func TestEnvPrefix(t *testing.T) {
+	t.Parallel()
+
 	os.Setenv("MICROCART_HTTPSERVER_ADDR", "localhost:9000")
 
 	c, err := config.Load()
@@ -25,6 +27,8 @@ func TestEnvPrefix(t *testing.T) {
 }
 
 func TestUnparsable(t *testing.T) {
+	t.Parallel()
+
 	os.Setenv("MICROCART_HTTPSERVER_READTIMEOUT", "unparsable")
 
 	_, err := config.Load()
