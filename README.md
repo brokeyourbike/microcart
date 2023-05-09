@@ -1,4 +1,8 @@
 # microcart
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/fbaad4c7799f157bde69/maintainability)](https://codeclimate.com/github/brokeyourbike/microcart/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/fbaad4c7799f157bde69/test_coverage)](https://codeclimate.com/github/brokeyourbike/microcart/test_coverage)
+
 Compact e-commerce solution, minimal resources, ultra-fast performance.
 
 ## Authors
