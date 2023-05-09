@@ -1,0 +1,10 @@
+[HTTPClient]
+timeout = "15s"
+
+[HTTPServer]
+addr = "127.0.0.1:8000"
+readTimeout = "30s"
+writeTimeout = "30s"
+
+[SQLite]
+path = "file::memory:?cache=shared"
